@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/.vscode
 
 # testing
 /coverage
@@ -11,13 +12,19 @@
 # next.js
 /.next/
 /out/
+tsconfig.tsbuildinfo
 
 # production
 /build
+.scannerwork
+.editorconfig
+.prettierrc.json
 
 # misc
 .DS_Store
 *.pem
+.editorconfig
+.prettierrc.json
 
 # debug
 npm-debug.log*
