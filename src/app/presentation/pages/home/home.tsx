@@ -4,8 +4,10 @@ import Image from 'next/image'
 import finance from '../../assets/img/dados-financeiros.jpg'
 import React from 'react'
 import PublicLayout from '../../layout/public-layout/public-layout';
+import { useStyles } from './home-styles';
 
 const HomePage = () => {
+  const classes= useStyles()
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
 

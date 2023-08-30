@@ -17,7 +17,8 @@ const CreditCardButton: React.FC<CreditCardButtonProps> = ({ onClick }) => {
     if (onClick) {
         onClick()
     }
-  };
+  }
+  
   return (
     <React.Fragment>
       <Button

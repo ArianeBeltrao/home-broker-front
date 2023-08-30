@@ -8,10 +8,31 @@
   ], 
   "plugins": [
     "react",
+    "import-helpers",
     "@typescript-eslint",
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "never",
+        "groups": [
+          "/^next/",
+          "/^react/",
+          "module",
+          "/^~/app/domain/",
+          "/^~/ioc/",
+          "/^~/app/application/",
+          "/^~/app/infra/",
+          "/^~/app/main/",
+          "/^~/app/validation/",
+          "/^~/app/presentation/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": false }
+      }
+    ]
   }
 }

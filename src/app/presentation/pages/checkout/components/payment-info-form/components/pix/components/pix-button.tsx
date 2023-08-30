@@ -1,10 +1,20 @@
 import { Button } from "@mui/material"
 
-const PixButton = () => {
+type Props = {
+  onClick: () => void
+}
+
+const PixButton = ({ onClick }: Props) => {
+  const handleButtonClick = () => {
+    if (onClick) {
+        onClick()
+    }
+  }
   return (
     <Button
       variant="contained"
       color="primary"
+      onClick={handleButtonClick}
       sx={{
         mt: 2,
         width: "100%",
