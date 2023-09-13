@@ -8,7 +8,6 @@ import Document, {
   NextScript
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import MoneyIcon from '@mui/icons-material/Money'
 
 export default class MyDocument extends Document {
   static async getInitialProps(
